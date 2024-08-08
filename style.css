@@ -1,0 +1,463 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/b-1.jpg');
+    background-color: rgba(34, 37, 45, 0.6); /* Semi-transparent color overlay */
+    background-blend-mode: overlay; /* Blend the image and the color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: transparent;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.header .nav ul {
+    list-style: none;
+}
+
+.header .nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    background: url('img/b-1.jpg') no-repeat center center/cover;
+    background-color: rgba(34, 37, 45, 0.3);
+    background-blend-mode: overlay;
+    color: white;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background: #77a6f7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* Features section */
+.features {
+    padding: 40px 20px;
+    background-color: #020c0d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #f4f4f4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1 1 calc(50% - 20px); /* Two items per row on medium and large screens */
+    min-width: 300px;
+    position: relative;
+    overflow: hidden; /* Ensure image does not overflow the container */
+    border-radius: 8px;
+    height: 300px; /* Adjust height as needed */
+}
+
+.feature-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    display: block;
+}
+
+.feature-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 8px;
+    transform: translateY(0); /* Remove translate to ensure positioning is correct */
+    height: auto; /* Adjust height based on content */
+}
+
+.feature-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* About us */
+.about {
+    padding: 20px;
+    background-color: #020c0d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #f4f4f4;
+}
+
+.grid {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid-item {
+    flex: 1 1 calc(20% - 20px); /* Four items per row with space in between */
+    min-width: 250px; /* Minimum width for each item */
+    height: 500px; /* Fixed height for all items */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    padding-top: 50%;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #1e40af;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+/* Contact Section Styles */
+.contact {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px; /* Ensure the section has a minimum height */
+    padding: 20px; /* Add padding around the section */
+}
+
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact iframe {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%); /* Darken the map */
+    border: 0; /* Remove the default border */
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    position: relative;
+    float: right; /* Float the form to the right */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Optional: Limit max width */
+    background-color: rgba(43, 40, 40, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Ensure the form is above the map */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #0f3c8b;
+    color: #fff; 
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0f3c8b;
+}
+
+/* Footer */
+.footer {
+    background-color: #020c0d; /* Background color */
+    color: #fff; /* Text color */
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .header .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .nav ul li {
+        margin: 10px 0;
+    }
+
+    .feature-item,
+    .grid-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .feature-list {
+        flex-direction: column;
+    }
+
+    .feature-item,
+    .grid-item {
+        flex: 1 1 100%;
+   
+    }
+
+    .contact-form {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+       margin-left: 15%;
+        font-size: 1.5em;
+    }
+    
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero .btn {
+        padding: 8px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

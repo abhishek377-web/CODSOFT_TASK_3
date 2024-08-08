@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Beyond & Above Trails</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Why We Are</a></li>
+                    <li><a href="#about"> About Us</a></li>
+                    <li><a href="#contact">Contac Us </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Discover the Thrill of Adventure</h2>
+            <p>Join us at Beyond & Above Trails for unforgettable experiences like trekking, river rafting, and more!</p>
+            <a href="#contact" class="btn" style="background:transparent;">Contact Now</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Our Unique Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-image-container">
+                        <img src="img/a-1.jpg" alt="Experienced Guides" class="feature-image">
+                        <div class="feature-text">
+                            <h3>Experienced Guides</h3>
+                            <p>Our seasoned guides are experts in their fields, ensuring your safety and enhancing your adventure with their knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image-container">
+                        <img src="img/a-2.jpg" alt="Top-Notch Safety" class="feature-image">
+                        <div class="feature-text">
+                            <h3>Top-Notch Safety</h3>
+                            <p>We prioritize your safety with thorough briefings and high-quality equipment to ensure a secure and enjoyable experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image-container">
+                        <img src="img/a-3.jpg" alt="Customized Adventures" class="feature-image">
+                        <div class="feature-text">
+                            <h3>Customized Adventures</h3>
+                            <p>Create a personalized adventure tailored to your preferences with our flexible and customizable packages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image-container">
+                        <img src="img/a-4.jpg" alt="Sustainable Practices" class="feature-image">
+                        <div class="feature-text">
+                            <h3>Sustainable Practices</h3>
+                            <p>We are committed to preserving nature by following eco-friendly practices and promoting responsible adventure tourism.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Beyond & Above Trails, we are passionate about bringing the thrill of adventure to life. From treacherous mountain trails to exhilarating river rapids, we offer a range of activities designed to challenge and excite. Our team of experienced guides ensures that your safety is our top priority, while our unique experiences guarantee memories that will last a lifetime.</p>
+            <p>Our offerings include:</p>
+            <div class="grid">
+                <div class="grid-item" style="background-image: url('img/l-0.jpg');">
+                    <div class="overlay">
+                        <h3>Adventurous Trekking Trails</h3>
+                        <p>Experience thrilling trekking trails in breathtaking locations.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="grid-item" style="background-image: url('img/l-1.jpg');">
+                    <div class="overlay">
+                        <h3>Exciting River Rafting Adventures</h3>
+                        <p>Enjoy heart-pounding river rafting adventures with our expert guides.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="grid-item" style="background-image: url('img/l-2.jpg');">
+                    <div class="overlay">
+                        <h3>Camping Under the Stars</h3>
+                        <p>Sleep under the stars in our carefully selected camping sites.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="grid-item" style="background-image: url('img/l-3.jpg');">
+                    <div class="overlay">
+                        <h3>Unique Wilderness Survival Courses</h3>
+                        <p>Learn essential wilderness survival skills in our unique courses.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="map-container">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.6347474092685!2d-122.42142468468105!3d37.77492927975972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e3b61e7eb%3A0x1dd68b9a6b9aa8b!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1625647951858!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Beyond & Above Trails offers thrilling adventures and unforgettable experiences. Explore our exciting trekking trails, river rafting adventures, and more!</p>
+                </div>
+                
+                <!-- Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Why we are</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 Adventure Lane, Explorer City, EX 45678</p>
+                    <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
+                    <p>Email: <a href="mailto:info@beyondabovetrails.com">info@beyondabovetrails.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beyond & Above Trails. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
